@@ -27,6 +27,7 @@ function Detail() {
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   const { products, cart } = state;
+  
 const addToCart = () => {
   const itemInCart = cart.find((cartItem) => cartItem._id === id)
 
